@@ -1,5 +1,5 @@
 {
-  "name": "ssh2-sftp-client",
+  "name": "ssh2-sftp-client-with-remote-path-sep",
   "version": "7.2.1",
   "description": "ssh2 sftp client for node",
   "main": "src/index.js",
@@ -20,14 +20,7 @@
   "engines": {
     "node": ">=10.24.1"
   },
-  "author": "Tim Cross",
-  "email": "theophilusx@gmail.com",
-  "contributors": [
-    {
-      "name": "见见 (original author)",
-      "email": "jyu213@gmail.com"
-    }
-  ],
+  "author": "Thomas Übellacker",
   "license": "Apache-2.0",
   "dependencies": {
     "concat-stream": "^2.0.0",

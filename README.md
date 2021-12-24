@@ -1,3 +1,5 @@
+Fork: Contains constructor option for remotePathSep
+----------------------------------------------------------------
 - [Overview](#sec-1)
 - [Installation](#sec-2)
 - [Basic Usage](#sec-3)

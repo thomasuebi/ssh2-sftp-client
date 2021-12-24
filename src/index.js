@@ -23,7 +23,8 @@ const {
 const { errorCode } = require('./constants');
 
 class SftpClient {
-  constructor(clientName) {
+  // CHANGE by https://github.com/thomasuebi: added remotePathSep to constructor
+  constructor(clientName, {remotePathSep}) {
     this.client = new Client();
     this.sftp = undefined;
     this.clientName = clientName ? clientName : 'sftp';
@@ -31,7 +32,7 @@ class SftpClient {
     this.errorHandled = false;
     this.closeHandled = false;
     this.endHandled = false;
-    this.remotePathSep = '/';
+    this.remotePathSep = remotePathSep ? remotePathSep : '/';
     this.remotePlatform = 'unix';
     this.debug = undefined;
     this.tempListeners = {};
